@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Scancode` enum in crate `sdl2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Scancode">
+
+    <title>sdl2::keyboard::Scancode - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>sdl2</a>::<wbr><a href='index.html'>keyboard</a></p><script>window.sidebarCurrent = {name: 'Scancode', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>sdl2</a>::<wbr><a href='index.html'>keyboard</a>::<wbr><a class='enum' href=''>Scancode</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2813' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#8-250' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Scancode {
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I,
+    J,
+    K,
+    L,
+    M,
+    N,
+    O,
+    P,
+    Q,
+    R,
+    S,
+    T,
+    U,
+    V,
+    W,
+    X,
+    Y,
+    Z,
+    Num1,
+    Num2,
+    Num3,
+    Num4,
+    Num5,
+    Num6,
+    Num7,
+    Num8,
+    Num9,
+    Num0,
+    Return,
+    Escape,
+    Backspace,
+    Tab,
+    Space,
+    Minus,
+    Equals,
+    LeftBracket,
+    RightBracket,
+    Backslash,
+    NonUsHash,
+    Semicolon,
+    Apostrophe,
+    Grave,
+    Comma,
+    Period,
+    Slash,
+    CapsLock,
+    F1,
+    F2,
+    F3,
+    F4,
+    F5,
+    F6,
+    F7,
+    F8,
+    F9,
+    F10,
+    F11,
+    F12,
+    PrintScreen,
+    ScrollLock,
+    Pause,
+    Insert,
+    Home,
+    PageUp,
+    Delete,
+    End,
+    PageDown,
+    Right,
+    Left,
+    Down,
+    Up,
+    NumLockClear,
+    KpDivide,
+    KpMultiply,
+    KpMinus,
+    KpPlus,
+    KpEnter,
+    Kp1,
+    Kp2,
+    Kp3,
+    Kp4,
+    Kp5,
+    Kp6,
+    Kp7,
+    Kp8,
+    Kp9,
+    Kp0,
+    KpPeriod,
+    NonUsBackslash,
+    Application,
+    Power,
+    KpEquals,
+    F13,
+    F14,
+    F15,
+    F16,
+    F17,
+    F18,
+    F19,
+    F20,
+    F21,
+    F22,
+    F23,
+    F24,
+    Execute,
+    Help,
+    Menu,
+    Select,
+    Stop,
+    Again,
+    Undo,
+    Cut,
+    Copy,
+    Paste,
+    Find,
+    Mute,
+    VolumeUp,
+    VolumeDown,
+    KpComma,
+    KpEqualsAS400,
+    International1,
+    International2,
+    International3,
+    International4,
+    International5,
+    International6,
+    International7,
+    International8,
+    International9,
+    Lang1,
+    Lang2,
+    Lang3,
+    Lang4,
+    Lang5,
+    Lang6,
+    Lang7,
+    Lang8,
+    Lang9,
+    AltErase,
+    SysReq,
+    Cancel,
+    Clear,
+    Prior,
+    Return2,
+    Separator,
+    Out,
+    Oper,
+    ClearAgain,
+    Crse,
+    ExseL,
+    Kp00,
+    Kp000,
+    ThousandsSeparator,
+    DecimalSeparator,
+    CurrencyUnit,
+    CurrencySubUnit,
+    KpLeftParen,
+    KpRightParen,
+    KpLeftBrace,
+    KpRightBrace,
+    KpTab,
+    KpBackspace,
+    KpA,
+    KpB,
+    KpC,
+    KpD,
+    KpE,
+    KpF,
+    KpXor,
+    KpPower,
+    KpPercent,
+    KpLess,
+    KpGreater,
+    KpAmpersand,
+    KpDblAmpersand,
+    KpVerticalBar,
+    KpDblVerticalBar,
+    KpColon,
+    KpHash,
+    KpSpace,
+    KpAt,
+    KpExclam,
+    KpMemStore,
+    KpMemRecall,
+    KpMemClear,
+    KpMemAdd,
+    KpMemSubtract,
+    KpMemMultiply,
+    KpMemDivide,
+    KpPlusMinus,
+    KpClear,
+    KpClearEntry,
+    KpBinary,
+    KpOoctal,
+    KpDecimal,
+    KpHexadecimal,
+    LCtrl,
+    LShift,
+    LAlt,
+    LGui,
+    RCtrl,
+    RShift,
+    RAlt,
+    RGui,
+    Mode,
+    AudioNext,
+    AudioPrev,
+    AudioStop,
+    AudioPlay,
+    AudioMute,
+    MediaSelect,
+    Www,
+    Mail,
+    Calculator,
+    Computer,
+    AcSearch,
+    AcHome,
+    AcBack,
+    AcForward,
+    AcStop,
+    AcRefresh,
+    AcBookmarks,
+    BrightnessDown,
+    BrightnessUp,
+    DisplaySwitch,
+    KbdIllumToggle,
+    KbdIllumDown,
+    KbdIllumUp,
+    Eject,
+    Sleep,
+    App1,
+    App2,
+    Num,
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.A' class='variant'><code>A</code></span><span id='variant.B' class='variant'><code>B</code></span><span id='variant.C' class='variant'><code>C</code></span><span id='variant.D' class='variant'><code>D</code></span><span id='variant.E' class='variant'><code>E</code></span><span id='variant.F' class='variant'><code>F</code></span><span id='variant.G' class='variant'><code>G</code></span><span id='variant.H' class='variant'><code>H</code></span><span id='variant.I' class='variant'><code>I</code></span><span id='variant.J' class='variant'><code>J</code></span><span id='variant.K' class='variant'><code>K</code></span><span id='variant.L' class='variant'><code>L</code></span><span id='variant.M' class='variant'><code>M</code></span><span id='variant.N' class='variant'><code>N</code></span><span id='variant.O' class='variant'><code>O</code></span><span id='variant.P' class='variant'><code>P</code></span><span id='variant.Q' class='variant'><code>Q</code></span><span id='variant.R' class='variant'><code>R</code></span><span id='variant.S' class='variant'><code>S</code></span><span id='variant.T' class='variant'><code>T</code></span><span id='variant.U' class='variant'><code>U</code></span><span id='variant.V' class='variant'><code>V</code></span><span id='variant.W' class='variant'><code>W</code></span><span id='variant.X' class='variant'><code>X</code></span><span id='variant.Y' class='variant'><code>Y</code></span><span id='variant.Z' class='variant'><code>Z</code></span><span id='variant.Num1' class='variant'><code>Num1</code></span><span id='variant.Num2' class='variant'><code>Num2</code></span><span id='variant.Num3' class='variant'><code>Num3</code></span><span id='variant.Num4' class='variant'><code>Num4</code></span><span id='variant.Num5' class='variant'><code>Num5</code></span><span id='variant.Num6' class='variant'><code>Num6</code></span><span id='variant.Num7' class='variant'><code>Num7</code></span><span id='variant.Num8' class='variant'><code>Num8</code></span><span id='variant.Num9' class='variant'><code>Num9</code></span><span id='variant.Num0' class='variant'><code>Num0</code></span><span id='variant.Return' class='variant'><code>Return</code></span><span id='variant.Escape' class='variant'><code>Escape</code></span><span id='variant.Backspace' class='variant'><code>Backspace</code></span><span id='variant.Tab' class='variant'><code>Tab</code></span><span id='variant.Space' class='variant'><code>Space</code></span><span id='variant.Minus' class='variant'><code>Minus</code></span><span id='variant.Equals' class='variant'><code>Equals</code></span><span id='variant.LeftBracket' class='variant'><code>LeftBracket</code></span><span id='variant.RightBracket' class='variant'><code>RightBracket</code></span><span id='variant.Backslash' class='variant'><code>Backslash</code></span><span id='variant.NonUsHash' class='variant'><code>NonUsHash</code></span><span id='variant.Semicolon' class='variant'><code>Semicolon</code></span><span id='variant.Apostrophe' class='variant'><code>Apostrophe</code></span><span id='variant.Grave' class='variant'><code>Grave</code></span><span id='variant.Comma' class='variant'><code>Comma</code></span><span id='variant.Period' class='variant'><code>Period</code></span><span id='variant.Slash' class='variant'><code>Slash</code></span><span id='variant.CapsLock' class='variant'><code>CapsLock</code></span><span id='variant.F1' class='variant'><code>F1</code></span><span id='variant.F2' class='variant'><code>F2</code></span><span id='variant.F3' class='variant'><code>F3</code></span><span id='variant.F4' class='variant'><code>F4</code></span><span id='variant.F5' class='variant'><code>F5</code></span><span id='variant.F6' class='variant'><code>F6</code></span><span id='variant.F7' class='variant'><code>F7</code></span><span id='variant.F8' class='variant'><code>F8</code></span><span id='variant.F9' class='variant'><code>F9</code></span><span id='variant.F10' class='variant'><code>F10</code></span><span id='variant.F11' class='variant'><code>F11</code></span><span id='variant.F12' class='variant'><code>F12</code></span><span id='variant.PrintScreen' class='variant'><code>PrintScreen</code></span><span id='variant.ScrollLock' class='variant'><code>ScrollLock</code></span><span id='variant.Pause' class='variant'><code>Pause</code></span><span id='variant.Insert' class='variant'><code>Insert</code></span><span id='variant.Home' class='variant'><code>Home</code></span><span id='variant.PageUp' class='variant'><code>PageUp</code></span><span id='variant.Delete' class='variant'><code>Delete</code></span><span id='variant.End' class='variant'><code>End</code></span><span id='variant.PageDown' class='variant'><code>PageDown</code></span><span id='variant.Right' class='variant'><code>Right</code></span><span id='variant.Left' class='variant'><code>Left</code></span><span id='variant.Down' class='variant'><code>Down</code></span><span id='variant.Up' class='variant'><code>Up</code></span><span id='variant.NumLockClear' class='variant'><code>NumLockClear</code></span><span id='variant.KpDivide' class='variant'><code>KpDivide</code></span><span id='variant.KpMultiply' class='variant'><code>KpMultiply</code></span><span id='variant.KpMinus' class='variant'><code>KpMinus</code></span><span id='variant.KpPlus' class='variant'><code>KpPlus</code></span><span id='variant.KpEnter' class='variant'><code>KpEnter</code></span><span id='variant.Kp1' class='variant'><code>Kp1</code></span><span id='variant.Kp2' class='variant'><code>Kp2</code></span><span id='variant.Kp3' class='variant'><code>Kp3</code></span><span id='variant.Kp4' class='variant'><code>Kp4</code></span><span id='variant.Kp5' class='variant'><code>Kp5</code></span><span id='variant.Kp6' class='variant'><code>Kp6</code></span><span id='variant.Kp7' class='variant'><code>Kp7</code></span><span id='variant.Kp8' class='variant'><code>Kp8</code></span><span id='variant.Kp9' class='variant'><code>Kp9</code></span><span id='variant.Kp0' class='variant'><code>Kp0</code></span><span id='variant.KpPeriod' class='variant'><code>KpPeriod</code></span><span id='variant.NonUsBackslash' class='variant'><code>NonUsBackslash</code></span><span id='variant.Application' class='variant'><code>Application</code></span><span id='variant.Power' class='variant'><code>Power</code></span><span id='variant.KpEquals' class='variant'><code>KpEquals</code></span><span id='variant.F13' class='variant'><code>F13</code></span><span id='variant.F14' class='variant'><code>F14</code></span><span id='variant.F15' class='variant'><code>F15</code></span><span id='variant.F16' class='variant'><code>F16</code></span><span id='variant.F17' class='variant'><code>F17</code></span><span id='variant.F18' class='variant'><code>F18</code></span><span id='variant.F19' class='variant'><code>F19</code></span><span id='variant.F20' class='variant'><code>F20</code></span><span id='variant.F21' class='variant'><code>F21</code></span><span id='variant.F22' class='variant'><code>F22</code></span><span id='variant.F23' class='variant'><code>F23</code></span><span id='variant.F24' class='variant'><code>F24</code></span><span id='variant.Execute' class='variant'><code>Execute</code></span><span id='variant.Help' class='variant'><code>Help</code></span><span id='variant.Menu' class='variant'><code>Menu</code></span><span id='variant.Select' class='variant'><code>Select</code></span><span id='variant.Stop' class='variant'><code>Stop</code></span><span id='variant.Again' class='variant'><code>Again</code></span><span id='variant.Undo' class='variant'><code>Undo</code></span><span id='variant.Cut' class='variant'><code>Cut</code></span><span id='variant.Copy' class='variant'><code>Copy</code></span><span id='variant.Paste' class='variant'><code>Paste</code></span><span id='variant.Find' class='variant'><code>Find</code></span><span id='variant.Mute' class='variant'><code>Mute</code></span><span id='variant.VolumeUp' class='variant'><code>VolumeUp</code></span><span id='variant.VolumeDown' class='variant'><code>VolumeDown</code></span><span id='variant.KpComma' class='variant'><code>KpComma</code></span><span id='variant.KpEqualsAS400' class='variant'><code>KpEqualsAS400</code></span><span id='variant.International1' class='variant'><code>International1</code></span><span id='variant.International2' class='variant'><code>International2</code></span><span id='variant.International3' class='variant'><code>International3</code></span><span id='variant.International4' class='variant'><code>International4</code></span><span id='variant.International5' class='variant'><code>International5</code></span><span id='variant.International6' class='variant'><code>International6</code></span><span id='variant.International7' class='variant'><code>International7</code></span><span id='variant.International8' class='variant'><code>International8</code></span><span id='variant.International9' class='variant'><code>International9</code></span><span id='variant.Lang1' class='variant'><code>Lang1</code></span><span id='variant.Lang2' class='variant'><code>Lang2</code></span><span id='variant.Lang3' class='variant'><code>Lang3</code></span><span id='variant.Lang4' class='variant'><code>Lang4</code></span><span id='variant.Lang5' class='variant'><code>Lang5</code></span><span id='variant.Lang6' class='variant'><code>Lang6</code></span><span id='variant.Lang7' class='variant'><code>Lang7</code></span><span id='variant.Lang8' class='variant'><code>Lang8</code></span><span id='variant.Lang9' class='variant'><code>Lang9</code></span><span id='variant.AltErase' class='variant'><code>AltErase</code></span><span id='variant.SysReq' class='variant'><code>SysReq</code></span><span id='variant.Cancel' class='variant'><code>Cancel</code></span><span id='variant.Clear' class='variant'><code>Clear</code></span><span id='variant.Prior' class='variant'><code>Prior</code></span><span id='variant.Return2' class='variant'><code>Return2</code></span><span id='variant.Separator' class='variant'><code>Separator</code></span><span id='variant.Out' class='variant'><code>Out</code></span><span id='variant.Oper' class='variant'><code>Oper</code></span><span id='variant.ClearAgain' class='variant'><code>ClearAgain</code></span><span id='variant.Crse' class='variant'><code>Crse</code></span><span id='variant.ExseL' class='variant'><code>ExseL</code></span><span id='variant.Kp00' class='variant'><code>Kp00</code></span><span id='variant.Kp000' class='variant'><code>Kp000</code></span><span id='variant.ThousandsSeparator' class='variant'><code>ThousandsSeparator</code></span><span id='variant.DecimalSeparator' class='variant'><code>DecimalSeparator</code></span><span id='variant.CurrencyUnit' class='variant'><code>CurrencyUnit</code></span><span id='variant.CurrencySubUnit' class='variant'><code>CurrencySubUnit</code></span><span id='variant.KpLeftParen' class='variant'><code>KpLeftParen</code></span><span id='variant.KpRightParen' class='variant'><code>KpRightParen</code></span><span id='variant.KpLeftBrace' class='variant'><code>KpLeftBrace</code></span><span id='variant.KpRightBrace' class='variant'><code>KpRightBrace</code></span><span id='variant.KpTab' class='variant'><code>KpTab</code></span><span id='variant.KpBackspace' class='variant'><code>KpBackspace</code></span><span id='variant.KpA' class='variant'><code>KpA</code></span><span id='variant.KpB' class='variant'><code>KpB</code></span><span id='variant.KpC' class='variant'><code>KpC</code></span><span id='variant.KpD' class='variant'><code>KpD</code></span><span id='variant.KpE' class='variant'><code>KpE</code></span><span id='variant.KpF' class='variant'><code>KpF</code></span><span id='variant.KpXor' class='variant'><code>KpXor</code></span><span id='variant.KpPower' class='variant'><code>KpPower</code></span><span id='variant.KpPercent' class='variant'><code>KpPercent</code></span><span id='variant.KpLess' class='variant'><code>KpLess</code></span><span id='variant.KpGreater' class='variant'><code>KpGreater</code></span><span id='variant.KpAmpersand' class='variant'><code>KpAmpersand</code></span><span id='variant.KpDblAmpersand' class='variant'><code>KpDblAmpersand</code></span><span id='variant.KpVerticalBar' class='variant'><code>KpVerticalBar</code></span><span id='variant.KpDblVerticalBar' class='variant'><code>KpDblVerticalBar</code></span><span id='variant.KpColon' class='variant'><code>KpColon</code></span><span id='variant.KpHash' class='variant'><code>KpHash</code></span><span id='variant.KpSpace' class='variant'><code>KpSpace</code></span><span id='variant.KpAt' class='variant'><code>KpAt</code></span><span id='variant.KpExclam' class='variant'><code>KpExclam</code></span><span id='variant.KpMemStore' class='variant'><code>KpMemStore</code></span><span id='variant.KpMemRecall' class='variant'><code>KpMemRecall</code></span><span id='variant.KpMemClear' class='variant'><code>KpMemClear</code></span><span id='variant.KpMemAdd' class='variant'><code>KpMemAdd</code></span><span id='variant.KpMemSubtract' class='variant'><code>KpMemSubtract</code></span><span id='variant.KpMemMultiply' class='variant'><code>KpMemMultiply</code></span><span id='variant.KpMemDivide' class='variant'><code>KpMemDivide</code></span><span id='variant.KpPlusMinus' class='variant'><code>KpPlusMinus</code></span><span id='variant.KpClear' class='variant'><code>KpClear</code></span><span id='variant.KpClearEntry' class='variant'><code>KpClearEntry</code></span><span id='variant.KpBinary' class='variant'><code>KpBinary</code></span><span id='variant.KpOoctal' class='variant'><code>KpOoctal</code></span><span id='variant.KpDecimal' class='variant'><code>KpDecimal</code></span><span id='variant.KpHexadecimal' class='variant'><code>KpHexadecimal</code></span><span id='variant.LCtrl' class='variant'><code>LCtrl</code></span><span id='variant.LShift' class='variant'><code>LShift</code></span><span id='variant.LAlt' class='variant'><code>LAlt</code></span><span id='variant.LGui' class='variant'><code>LGui</code></span><span id='variant.RCtrl' class='variant'><code>RCtrl</code></span><span id='variant.RShift' class='variant'><code>RShift</code></span><span id='variant.RAlt' class='variant'><code>RAlt</code></span><span id='variant.RGui' class='variant'><code>RGui</code></span><span id='variant.Mode' class='variant'><code>Mode</code></span><span id='variant.AudioNext' class='variant'><code>AudioNext</code></span><span id='variant.AudioPrev' class='variant'><code>AudioPrev</code></span><span id='variant.AudioStop' class='variant'><code>AudioStop</code></span><span id='variant.AudioPlay' class='variant'><code>AudioPlay</code></span><span id='variant.AudioMute' class='variant'><code>AudioMute</code></span><span id='variant.MediaSelect' class='variant'><code>MediaSelect</code></span><span id='variant.Www' class='variant'><code>Www</code></span><span id='variant.Mail' class='variant'><code>Mail</code></span><span id='variant.Calculator' class='variant'><code>Calculator</code></span><span id='variant.Computer' class='variant'><code>Computer</code></span><span id='variant.AcSearch' class='variant'><code>AcSearch</code></span><span id='variant.AcHome' class='variant'><code>AcHome</code></span><span id='variant.AcBack' class='variant'><code>AcBack</code></span><span id='variant.AcForward' class='variant'><code>AcForward</code></span><span id='variant.AcStop' class='variant'><code>AcStop</code></span><span id='variant.AcRefresh' class='variant'><code>AcRefresh</code></span><span id='variant.AcBookmarks' class='variant'><code>AcBookmarks</code></span><span id='variant.BrightnessDown' class='variant'><code>BrightnessDown</code></span><span id='variant.BrightnessUp' class='variant'><code>BrightnessUp</code></span><span id='variant.DisplaySwitch' class='variant'><code>DisplaySwitch</code></span><span id='variant.KbdIllumToggle' class='variant'><code>KbdIllumToggle</code></span><span id='variant.KbdIllumDown' class='variant'><code>KbdIllumDown</code></span><span id='variant.KbdIllumUp' class='variant'><code>KbdIllumUp</code></span><span id='variant.Eject' class='variant'><code>Eject</code></span><span id='variant.Sleep' class='variant'><code>Sleep</code></span><span id='variant.App1' class='variant'><code>App1</code></span><span id='variant.App2' class='variant'><code>App2</code></span><span id='variant.Num' class='variant'><code>Num</code></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3580' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#533-565' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from_keycode' class='method'><code>fn <a href='#method.from_keycode' class='fnname'>from_keycode</a>(keycode: <a class='enum' href='../../sdl2/keyboard/enum.Keycode.html' title='sdl2::keyboard::Keycode'>Keycode</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;</code></h4>
+<div class='docblock'><p>Gets the scancode from a virtual key. Returns None if there is no corresponding scancode.</p>
+</div><h4 id='method.from_name' class='method'><code>fn <a href='#method.from_name' class='fnname'>from_name</a>(name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;</code></h4>
+<h4 id='method.name' class='method'><code>fn <a href='#method.name' class='fnname'>name</a>(self) -&gt; &amp;'static <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a></code></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../num_traits/cast/trait.ToPrimitive.html' title='num_traits::cast::ToPrimitive'>ToPrimitive</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3559' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#252-267' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.to_i64' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#tymethod.to_i64' class='fnname'>to_i64</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>i64</code>.</p>
+</div><h4 id='method.to_u64' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#tymethod.to_u64' class='fnname'>to_u64</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>u64</code>.</p>
+</div><h4 id='method.to_isize' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_isize' class='fnname'>to_isize</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.isize.html'>isize</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>isize</code>.</p>
+</div><h4 id='method.to_i8' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_i8' class='fnname'>to_i8</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>i8</code>.</p>
+</div><h4 id='method.to_i16' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_i16' class='fnname'>to_i16</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>i16</code>.</p>
+</div><h4 id='method.to_i32' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_i32' class='fnname'>to_i32</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>i32</code>.</p>
+</div><h4 id='method.to_usize' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_usize' class='fnname'>to_usize</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to a <code>usize</code>.</p>
+</div><h4 id='method.to_u8' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_u8' class='fnname'>to_u8</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>u8</code>.</p>
+</div><h4 id='method.to_u16' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_u16' class='fnname'>to_u16</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>u16</code>.</p>
+</div><h4 id='method.to_u32' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_u32' class='fnname'>to_u32</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>u32</code>.</p>
+</div><h4 id='method.to_f32' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_f32' class='fnname'>to_f32</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>f32</code>.</p>
+</div><h4 id='method.to_f64' class='method'><code>fn <a href='../../num_traits/cast/trait.ToPrimitive.html#method.to_f64' class='fnname'>to_f64</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;</code></h4>
+<div class='docblock'><p>Converts the value of <code>self</code> to an <code>f64</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../num_traits/cast/trait.FromPrimitive.html' title='num_traits::cast::FromPrimitive'>FromPrimitive</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3566' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#269-521' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from_i64' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_i64' class='fnname'>from_i64</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>i64</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_i64">Read more</a></p>
+</div><h4 id='method.from_u64' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_u64' class='fnname'>from_u64</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>u64</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#tymethod.from_u64">Read more</a></p>
+</div><h4 id='method.from_isize' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_isize' class='fnname'>from_isize</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.isize.html'>isize</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>isize</code> to return an optional value of this type. If the value cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_isize">Read more</a></p>
+</div><h4 id='method.from_i8' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_i8' class='fnname'>from_i8</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>i8</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_i8">Read more</a></p>
+</div><h4 id='method.from_i16' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_i16' class='fnname'>from_i16</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>i16</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_i16">Read more</a></p>
+</div><h4 id='method.from_i32' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_i32' class='fnname'>from_i32</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>i32</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_i32">Read more</a></p>
+</div><h4 id='method.from_usize' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_usize' class='fnname'>from_usize</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert a <code>usize</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_usize">Read more</a></p>
+</div><h4 id='method.from_u8' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_u8' class='fnname'>from_u8</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>u8</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_u8">Read more</a></p>
+</div><h4 id='method.from_u16' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_u16' class='fnname'>from_u16</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>u16</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_u16">Read more</a></p>
+</div><h4 id='method.from_u32' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_u32' class='fnname'>from_u32</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert an <code>u32</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_u32">Read more</a></p>
+</div><h4 id='method.from_f32' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_f32' class='fnname'>from_f32</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert a <code>f32</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_f32">Read more</a></p>
+</div><h4 id='method.from_f64' class='method'><code>fn <a href='../../num_traits/cast/trait.FromPrimitive.html#method.from_f64' class='fnname'>from_f64</a>(n: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Convert a <code>f64</code> to return an optional value of this type. If the type cannot be represented by this value, the <code>None</code> is returned. <a href="../../num_traits/cast/trait.FromPrimitive.html#method.from_f64">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html' title='core::fmt::Display'>Display</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3573' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#525-529' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Error.html' title='core::fmt::Error'>Error</a>&gt;</code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3296' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt-1' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3541' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></h4>
+<div class='docblock'><p>Feeds this value into the state given, updating the hasher as necessary.</p>
+</div><h4 id='method.hash_slice' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></h4>
+<div class='docblock'><p>Feeds a slice of this type into the state provided.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3546' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3552' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3555' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3558' class='srclink' href='../../src/sdl2/keyboard/scancode.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "sdl2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

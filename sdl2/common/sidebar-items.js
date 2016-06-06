@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["IntegerOrSdlError","A given integer was so big that its representation as a C integer would be negative."]]});

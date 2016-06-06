@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["SDL_GetRevision",""],["SDL_GetRevisionNumber",""],["SDL_GetVersion",""]],"struct":[["SDL_version",""]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["init","Builds an SDL2 window from a WindowBuilder struct."]]});

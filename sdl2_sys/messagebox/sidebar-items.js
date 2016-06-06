@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["SDL_MESSAGEBOX_ERROR",""],["SDL_MESSAGEBOX_INFORMATION",""],["SDL_MESSAGEBOX_WARNING",""]],"fn":[["SDL_ShowSimpleMessageBox",""]],"type":[["SDL_MessageBoxFlags",""]]});

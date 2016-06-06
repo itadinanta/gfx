@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `init` fn in crate `gfx_window_sdl`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, init">
+
+    <title>gfx_window_sdl::init - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>gfx_window_sdl</a></p><script>window.sidebarCurrent = {name: 'init', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content fn">
+<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>gfx_window_sdl</a>::<wbr><a class='fn' href=''>init</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-10' class='srclink' href='../src/gfx_window_sdl/src/window/sdl/src/lib.rs.html#41-62' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn init(builder: &amp;mut <a class='struct' href='../sdl2/video/struct.WindowBuilder.html' title='sdl2::video::WindowBuilder'>WindowBuilder</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../sdl2/video/struct.Window.html' title='sdl2::video::Window'>Window</a>, <a class='struct' href='../sdl2/video/struct.GLContext.html' title='sdl2::video::GLContext'>GLContext</a>, <a class='struct' href='../gfx_device_gl/struct.Device.html' title='gfx_device_gl::Device'>Device</a>, <a class='struct' href='../gfx_device_gl/factory/struct.Factory.html' title='gfx_device_gl::factory::Factory'>Factory</a>, <a class='struct' href='../gfx_core/handle/struct.RenderTargetView.html' title='gfx_core::handle::RenderTargetView'>RenderTargetView</a>&lt;<a class='enum' href='../gfx_device_gl/enum.Resources.html' title='gfx_device_gl::Resources'>Resources</a>,&nbsp;<a class='type' href='../gfx_core/format/type.Srgba8.html' title='gfx_core::format::Srgba8'>Srgba8</a>&gt;, <a class='struct' href='../gfx_core/handle/struct.DepthStencilView.html' title='gfx_core::handle::DepthStencilView'>DepthStencilView</a>&lt;<a class='enum' href='../gfx_device_gl/enum.Resources.html' title='gfx_device_gl::Resources'>Resources</a>,&nbsp;<a class='type' href='../gfx_core/format/type.DepthStencil.html' title='gfx_core::format::DepthStencil'>DepthStencil</a>&gt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a></pre><div class='docblock'><p>Builds an SDL2 window from a WindowBuilder struct.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>gfx_window_sdl</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>sdl2</span>;
+ 
+<span class='kw'>fn</span> <span class='ident'>main</span>() {
+    <span class='kw'>let</span> <span class='ident'>sdl</span> <span class='op'>=</span> <span class='ident'>sdl2</span>::<span class='ident'>init</span>().<span class='ident'>unwrap</span>();
+ 
+    <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>builder</span> <span class='op'>=</span> <span class='ident'>sdl</span>.<span class='ident'>video</span>().<span class='ident'>unwrap</span>().<span class='ident'>window</span>(<span class='string'>&quot;Example&quot;</span>, <span class='number'>800</span>, <span class='number'>600</span>);
+    <span class='kw'>let</span> (<span class='ident'>window</span>, <span class='ident'>glcontext</span>, <span class='ident'>device</span>, <span class='ident'>factory</span>, <span class='ident'>color_view</span>, <span class='ident'>depth_view</span>) <span class='op'>=</span>
+        <span class='ident'>gfx_window_sdl</span>::<span class='ident'>init</span>(<span class='kw-2'>&amp;</span><span class='kw-2'>mut</span> <span class='ident'>builder</span>);
+
+    <span class='comment'>// some code...</span>
+}</pre>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "gfx_window_sdl";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

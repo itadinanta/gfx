@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Event` enum in crate `sdl2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Event">
+
+    <title>sdl2::event::Event - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>sdl2</a>::<wbr><a href='index.html'>event</a></p><script>window.sidebarCurrent = {name: 'Event', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>sdl2</a>::<wbr><a href='index.html'>event</a>::<wbr><a class='enum' href=''>Event</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-364' class='srclink' href='../../src/sdl2/event.rs.html#424-664' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Event {
+    Quit {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    AppTerminating {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    AppLowMemory {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    AppWillEnterBackground {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    AppDidEnterBackground {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    AppWillEnterForeground {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    AppDidEnterForeground {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    Window {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        win_event_id: <a class='enum' href='../../sdl2/event/enum.WindowEventId.html' title='sdl2::event::WindowEventId'>WindowEventId</a>,
+        data1: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        data2: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    KeyDown {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        keycode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Keycode.html' title='sdl2::keyboard::Keycode'>Keycode</a>&gt;,
+        scancode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;,
+        keymod: <a class='struct' href='../../sdl2/keyboard/struct.Mod.html' title='sdl2::keyboard::Mod'>Mod</a>,
+        repeat: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>,
+    },
+    KeyUp {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        keycode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Keycode.html' title='sdl2::keyboard::Keycode'>Keycode</a>&gt;,
+        scancode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;,
+        keymod: <a class='struct' href='../../sdl2/keyboard/struct.Mod.html' title='sdl2::keyboard::Mod'>Mod</a>,
+        repeat: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>,
+    },
+    TextEditing {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        text: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+        start: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        length: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    TextInput {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        text: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    MouseMotion {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        mousestate: <a class='struct' href='../../sdl2/mouse/struct.MouseState.html' title='sdl2::mouse::MouseState'>MouseState</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        xrel: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        yrel: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    MouseButtonDown {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        mouse_btn: <a class='enum' href='../../sdl2/mouse/enum.Mouse.html' title='sdl2::mouse::Mouse'>Mouse</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    MouseButtonUp {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        mouse_btn: <a class='enum' href='../../sdl2/mouse/enum.Mouse.html' title='sdl2::mouse::Mouse'>Mouse</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    MouseWheel {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    JoyAxisMotion {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        axis_idx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
+        value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    },
+    JoyBallMotion {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        ball_idx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
+        xrel: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+        yrel: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    },
+    JoyHatMotion {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        hat_idx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
+        state: <a class='enum' href='../../sdl2/joystick/enum.HatState.html' title='sdl2::joystick::HatState'>HatState</a>,
+    },
+    JoyButtonDown {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        button_idx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
+    },
+    JoyButtonUp {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        button_idx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
+    },
+    JoyDeviceAdded {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    JoyDeviceRemoved {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    ControllerAxisMotion {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        axis: <a class='enum' href='../../sdl2/controller/enum.Axis.html' title='sdl2::controller::Axis'>Axis</a>,
+        value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    },
+    ControllerButtonDown {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        button: <a class='enum' href='../../sdl2/controller/enum.Button.html' title='sdl2::controller::Button'>Button</a>,
+    },
+    ControllerButtonUp {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        button: <a class='enum' href='../../sdl2/controller/enum.Button.html' title='sdl2::controller::Button'>Button</a>,
+    },
+    ControllerDeviceAdded {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    ControllerDeviceRemoved {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    ControllerDeviceRemapped {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        which: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+    },
+    FingerDown {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        touch_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        finger_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        dx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        dy: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        pressure: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+    },
+    FingerUp {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        touch_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        finger_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        dx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        dy: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        pressure: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+    },
+    FingerMotion {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        touch_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        finger_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        dx: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        dy: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        pressure: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+    },
+    DollarGesture {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        touch_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        gesture_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        num_fingers: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        error: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+    },
+    DollarRecord {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        touch_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        gesture_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        num_fingers: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        error: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+    },
+    MultiGesture {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        touch_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+        d_theta: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        d_dist: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>,
+        num_fingers: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>,
+    },
+    ClipboardUpdate {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+    DropFile {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        filename: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    },
+    User {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        window_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        type_: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        code: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>,
+        data1: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../sdl2/libc/enum.c_void.html' title='sdl2::libc::c_void'>c_void</a>,
+        data2: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../sdl2/libc/enum.c_void.html' title='sdl2::libc::c_void'>c_void</a>,
+    },
+    Unknown {
+        timestamp: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+        type_: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    },
+}</pre><div class='docblock'><p>Different event types.</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.Quit' class='variant'><code>Quit</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Quit.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.AppTerminating' class='variant'><code>AppTerminating</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.AppTerminating.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.AppLowMemory' class='variant'><code>AppLowMemory</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.AppLowMemory.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.AppWillEnterBackground' class='variant'><code>AppWillEnterBackground</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.AppWillEnterBackground.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.AppDidEnterBackground' class='variant'><code>AppDidEnterBackground</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.AppDidEnterBackground.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.AppWillEnterForeground' class='variant'><code>AppWillEnterForeground</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.AppWillEnterForeground.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.AppDidEnterForeground' class='variant'><code>AppDidEnterForeground</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.AppDidEnterForeground.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.Window' class='variant'><code>Window</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Window.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.Window.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.Window.field.win_event_id'><code>win_event_id:&nbsp;<a class='enum' href='../../sdl2/event/enum.WindowEventId.html' title='sdl2::event::WindowEventId'>WindowEventId</a></code></td><td></td></tr><tr><td id='variant.Window.field.data1'><code>data1:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.Window.field.data2'><code>data2:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.KeyDown' class='variant'><code>KeyDown</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.KeyDown.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.KeyDown.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.KeyDown.field.keycode'><code>keycode:&nbsp;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Keycode.html' title='sdl2::keyboard::Keycode'>Keycode</a>&gt;</code></td><td></td></tr><tr><td id='variant.KeyDown.field.scancode'><code>scancode:&nbsp;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;</code></td><td></td></tr><tr><td id='variant.KeyDown.field.keymod'><code>keymod:&nbsp;<a class='struct' href='../../sdl2/keyboard/struct.Mod.html' title='sdl2::keyboard::Mod'>Mod</a></code></td><td></td></tr><tr><td id='variant.KeyDown.field.repeat'><code>repeat:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></td><td></td></tr></table><span id='variant.KeyUp' class='variant'><code>KeyUp</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.KeyUp.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.KeyUp.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.KeyUp.field.keycode'><code>keycode:&nbsp;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Keycode.html' title='sdl2::keyboard::Keycode'>Keycode</a>&gt;</code></td><td></td></tr><tr><td id='variant.KeyUp.field.scancode'><code>scancode:&nbsp;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../sdl2/keyboard/enum.Scancode.html' title='sdl2::keyboard::Scancode'>Scancode</a>&gt;</code></td><td></td></tr><tr><td id='variant.KeyUp.field.keymod'><code>keymod:&nbsp;<a class='struct' href='../../sdl2/keyboard/struct.Mod.html' title='sdl2::keyboard::Mod'>Mod</a></code></td><td></td></tr><tr><td id='variant.KeyUp.field.repeat'><code>repeat:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></td><td></td></tr></table><span id='variant.TextEditing' class='variant'><code>TextEditing</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.TextEditing.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.TextEditing.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.TextEditing.field.text'><code>text:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></td><td></td></tr><tr><td id='variant.TextEditing.field.start'><code>start:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.TextEditing.field.length'><code>length:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.TextInput' class='variant'><code>TextInput</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.TextInput.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.TextInput.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.TextInput.field.text'><code>text:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></td><td></td></tr></table><span id='variant.MouseMotion' class='variant'><code>MouseMotion</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.MouseMotion.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.mousestate'><code>mousestate:&nbsp;<a class='struct' href='../../sdl2/mouse/struct.MouseState.html' title='sdl2::mouse::MouseState'>MouseState</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.xrel'><code>xrel:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.MouseMotion.field.yrel'><code>yrel:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.MouseButtonDown' class='variant'><code>MouseButtonDown</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.MouseButtonDown.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonDown.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonDown.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonDown.field.mouse_btn'><code>mouse_btn:&nbsp;<a class='enum' href='../../sdl2/mouse/enum.Mouse.html' title='sdl2::mouse::Mouse'>Mouse</a></code></td><td></td></tr><tr><td id='variant.MouseButtonDown.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonDown.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.MouseButtonUp' class='variant'><code>MouseButtonUp</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.MouseButtonUp.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonUp.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonUp.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonUp.field.mouse_btn'><code>mouse_btn:&nbsp;<a class='enum' href='../../sdl2/mouse/enum.Mouse.html' title='sdl2::mouse::Mouse'>Mouse</a></code></td><td></td></tr><tr><td id='variant.MouseButtonUp.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.MouseButtonUp.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.MouseWheel' class='variant'><code>MouseWheel</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.MouseWheel.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseWheel.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseWheel.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MouseWheel.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.MouseWheel.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.JoyAxisMotion' class='variant'><code>JoyAxisMotion</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyAxisMotion.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyAxisMotion.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.JoyAxisMotion.field.axis_idx'><code>axis_idx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code></td><td></td></tr><tr><td id='variant.JoyAxisMotion.field.value'><code>value:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code></td><td></td></tr></table><span id='variant.JoyBallMotion' class='variant'><code>JoyBallMotion</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyBallMotion.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyBallMotion.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.JoyBallMotion.field.ball_idx'><code>ball_idx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code></td><td></td></tr><tr><td id='variant.JoyBallMotion.field.xrel'><code>xrel:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code></td><td></td></tr><tr><td id='variant.JoyBallMotion.field.yrel'><code>yrel:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code></td><td></td></tr></table><span id='variant.JoyHatMotion' class='variant'><code>JoyHatMotion</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyHatMotion.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyHatMotion.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.JoyHatMotion.field.hat_idx'><code>hat_idx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code></td><td></td></tr><tr><td id='variant.JoyHatMotion.field.state'><code>state:&nbsp;<a class='enum' href='../../sdl2/joystick/enum.HatState.html' title='sdl2::joystick::HatState'>HatState</a></code></td><td></td></tr></table><span id='variant.JoyButtonDown' class='variant'><code>JoyButtonDown</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyButtonDown.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyButtonDown.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.JoyButtonDown.field.button_idx'><code>button_idx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code></td><td></td></tr></table><span id='variant.JoyButtonUp' class='variant'><code>JoyButtonUp</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyButtonUp.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyButtonUp.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.JoyButtonUp.field.button_idx'><code>button_idx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code></td><td></td></tr></table><span id='variant.JoyDeviceAdded' class='variant'><code>JoyDeviceAdded</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyDeviceAdded.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyDeviceAdded.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.JoyDeviceRemoved' class='variant'><code>JoyDeviceRemoved</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.JoyDeviceRemoved.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.JoyDeviceRemoved.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.ControllerAxisMotion' class='variant'><code>ControllerAxisMotion</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ControllerAxisMotion.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.ControllerAxisMotion.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.ControllerAxisMotion.field.axis'><code>axis:&nbsp;<a class='enum' href='../../sdl2/controller/enum.Axis.html' title='sdl2::controller::Axis'>Axis</a></code></td><td></td></tr><tr><td id='variant.ControllerAxisMotion.field.value'><code>value:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code></td><td></td></tr></table><span id='variant.ControllerButtonDown' class='variant'><code>ControllerButtonDown</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ControllerButtonDown.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.ControllerButtonDown.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.ControllerButtonDown.field.button'><code>button:&nbsp;<a class='enum' href='../../sdl2/controller/enum.Button.html' title='sdl2::controller::Button'>Button</a></code></td><td></td></tr></table><span id='variant.ControllerButtonUp' class='variant'><code>ControllerButtonUp</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ControllerButtonUp.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.ControllerButtonUp.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.ControllerButtonUp.field.button'><code>button:&nbsp;<a class='enum' href='../../sdl2/controller/enum.Button.html' title='sdl2::controller::Button'>Button</a></code></td><td></td></tr></table><span id='variant.ControllerDeviceAdded' class='variant'><code>ControllerDeviceAdded</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ControllerDeviceAdded.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.ControllerDeviceAdded.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.ControllerDeviceRemoved' class='variant'><code>ControllerDeviceRemoved</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ControllerDeviceRemoved.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.ControllerDeviceRemoved.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.ControllerDeviceRemapped' class='variant'><code>ControllerDeviceRemapped</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ControllerDeviceRemapped.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.ControllerDeviceRemapped.field.which'><code>which:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr></table><span id='variant.FingerDown' class='variant'><code>FingerDown</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.FingerDown.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.touch_id'><code>touch_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.finger_id'><code>finger_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.dx'><code>dx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.dy'><code>dy:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerDown.field.pressure'><code>pressure:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr></table><span id='variant.FingerUp' class='variant'><code>FingerUp</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.FingerUp.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.touch_id'><code>touch_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.finger_id'><code>finger_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.dx'><code>dx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.dy'><code>dy:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerUp.field.pressure'><code>pressure:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr></table><span id='variant.FingerMotion' class='variant'><code>FingerMotion</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.FingerMotion.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.touch_id'><code>touch_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.finger_id'><code>finger_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.dx'><code>dx:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.dy'><code>dy:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.FingerMotion.field.pressure'><code>pressure:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr></table><span id='variant.DollarGesture' class='variant'><code>DollarGesture</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.DollarGesture.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.DollarGesture.field.touch_id'><code>touch_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.DollarGesture.field.gesture_id'><code>gesture_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.DollarGesture.field.num_fingers'><code>num_fingers:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.DollarGesture.field.error'><code>error:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.DollarGesture.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.DollarGesture.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr></table><span id='variant.DollarRecord' class='variant'><code>DollarRecord</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.DollarRecord.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.DollarRecord.field.touch_id'><code>touch_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.DollarRecord.field.gesture_id'><code>gesture_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.DollarRecord.field.num_fingers'><code>num_fingers:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.DollarRecord.field.error'><code>error:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.DollarRecord.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.DollarRecord.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr></table><span id='variant.MultiGesture' class='variant'><code>MultiGesture</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.MultiGesture.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.MultiGesture.field.touch_id'><code>touch_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></td><td></td></tr><tr><td id='variant.MultiGesture.field.d_theta'><code>d_theta:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.MultiGesture.field.d_dist'><code>d_dist:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.MultiGesture.field.x'><code>x:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.MultiGesture.field.y'><code>y:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></td><td></td></tr><tr><td id='variant.MultiGesture.field.num_fingers'><code>num_fingers:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code></td><td></td></tr></table><span id='variant.ClipboardUpdate' class='variant'><code>ClipboardUpdate</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.ClipboardUpdate.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><span id='variant.DropFile' class='variant'><code>DropFile</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.DropFile.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.DropFile.field.filename'><code>filename:&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></td><td></td></tr></table><span id='variant.User' class='variant'><code>User</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.User.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.User.field.window_id'><code>window_id:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.User.field.type_'><code>type_:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.User.field.code'><code>code:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></td><td></td></tr><tr><td id='variant.User.field.data1'><code>data1:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../sdl2/libc/enum.c_void.html' title='sdl2::libc::c_void'>c_void</a></code></td><td></td></tr><tr><td id='variant.User.field.data2'><code>data2:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../sdl2/libc/enum.c_void.html' title='sdl2::libc::c_void'>c_void</a></code></td><td></td></tr></table><span id='variant.Unknown' class='variant'><code>Unknown</code></span><h3 class='fields'>Fields</h3>
+
+                           <table><tr><td id='variant.Unknown.field.timestamp'><code>timestamp:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr><tr><td id='variant.Unknown.field.type_'><code>type_:&nbsp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1334' class='srclink' href='../../src/sdl2/event.rs.html#713-1167' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.is_user_event' class='method'><code>fn <a href='#method.is_user_event' class='fnname'>is_user_event</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.as_user_event_type' class='method'><code>fn <a href='#method.as_user_event_type' class='fnname'>as_user_event_type</a>&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/any/trait.Any.html' title='core::any::Any'>Any</a>&gt;(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;T&gt;</code></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1330' class='srclink' href='../../src/sdl2/event.rs.html#666-710' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, out: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-556' class='srclink' href='../../src/sdl2/event.rs.html#422' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1175' class='srclink' href='../../src/sdl2/event.rs.html#422' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../sdl2/event/enum.Event.html' title='sdl2::event::Event'>Event</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "sdl2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
